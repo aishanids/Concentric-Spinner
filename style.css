@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	background: black;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.things {
+	padding: 3rem;
+}
+
+.thing {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+	border: 10px solid transparent;
+	border-color: #eced12 #12ed80 #1312ed #ed127f;
+	border-radius: 20%;
+	animation: thing 15s cubic-bezier(0.35, -0.14, 0.79, .9) infinite;
+}
+
+.thing1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+	border: 10px solid transparent;
+	border-bottom: 0px;
+	border-color: #eced12 transparent transparent #ed127f;
+	border-radius: 100%;
+	animation: thing 15s cubic-bezier(0.35, -0.14, 0.79, .9) infinite;
+}
+
+.thing2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 1px;
+	border: 10px solid transparent;
+	border-color: #1312ed transparent transparent #1312ed;
+	border-radius: 100%;
+	animation: thing 15s cubic-bezier(0.35, -0.14, 0.79, .9) infinite;
+}
+
+@keyframes thing {
+	50% {
+		transform: rotateZ(-.2turn);
+	}
+	50% {
+		transform: rotateZ(.8turn);
+	}
+}
